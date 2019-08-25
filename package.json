@@ -3,8 +3,9 @@
   "version": "7.2.0",
   "license": "SEE LICENSE IN <license.pdf>",
   "scripts": {
+    "heroku-postbuild": "ng build --prod",
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -12,6 +13,10 @@
     "remove-demo-unix": "rm -rf projects && rm angular.json && mv angular-clean.json angular.json",
     "remove-demo-windows": "rmdir /s /q projects && del angular.json && ren angular-clean.json angular.json",
     "dev": "lite-server"
+  },
+  "engines": {
+    "node": "10.16.3",
+    "npm": "6.9.0"
   },
   "//": "git+https://oauth2:REPLACE_WITH_YOUR_TOKEN@git.mdbootstrap.com/mdb/angular/ng-uikit-pro-standard.git",
   "private": true,
@@ -39,6 +44,7 @@
     "classlist.js": "1.1.x",
     "core-js": "2.5.7",
     "easy-pie-chart": "2.1.x",
+    "express": "^4.17.1",
     "font-awesome": "4.7.x",
     "glider-js": "^1.6.6",
     "hammerjs": "2.0.x",
@@ -47,10 +53,12 @@
     "ng-uikit-pro-standard": "file:ng-uikit-pro-standard-7.2.0.tgz",
     "ngx-facebook": "2.4.0",
     "ngx-slick-carousel": "^0.4.6",
+    "path": "^0.12.7",
     "rxjs": "^6.0.0",
     "screenfull": "3.3.x",
     "slick-carousel": "^1.8.1",
     "smoothscroll-polyfill": "0.4.3",
+    "typescript": "~3.1.6",
     "web-animations-js": "2.3.x",
     "zone.js": "0.8.x"
   },
@@ -63,6 +71,7 @@
     "@types/jasmine": "3.3.0",
     "@types/node": "~10.12.10",
     "codelyzer": "~4.5.0",
+    "enhanced-resolve": "^3.3.0",
     "jasmine-core": "~3.3.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "^3.1.1",
