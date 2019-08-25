@@ -3,6 +3,7 @@
   "version": "7.2.0",
   "license": "SEE LICENSE IN <license.pdf>",
   "scripts": {
+    "install": "npm install",
     "heroku-postbuild": "ng build --prod",
     "ng": "ng",
     "start": "node server.js",
