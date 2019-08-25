@@ -1,0 +1,106 @@
+$navy-blue: #0b2f5f;
+$dark-grey: #8d99ae;
+$light-grey: #edf2f4;
+$red: #ef233c;
+$dark-red: #d90429;
+$title-font: "freight-big-pro",
+serif;
+
+.my-font {
+  font-family: $title-font
+}
+
+.my-dark-navy {
+  background-color: $navy-blue;
+}
+
+.text-navy {
+  color: $navy-blue !important;
+}
+
+.bg-my-red {
+  background-color: $dark-red;
+}
+
+.bg-my-red:hover {
+  color: $light-grey !important;
+  background-color: $navy-blue;
+}
+
+.my-light-grey {
+  color: $light-grey;
+}
+
+.bg-my-light-grey {
+  background-color: $light-grey;
+}
+
+.my-grey {
+  color: $dark-grey;
+}
+
+.dark-red-text {
+  color: $dark-red !important;
+}
+
+
+.image-bar {
+    width: 100%;
+    position: relative;
+    margin: 0 0;
+    overflow: hidden;
+    height: 50vh;
+  }
+.image-bar:before {
+    background: url(../../assets/Yare-32.jpg) no-repeat center;
+    background-size: cover;
+    content: "";
+    display: inline-block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    animation: zoomEffect 90s ease infinite alternate;
+  }
+  
+  @keyframes zoomEffect {
+      from {transform: scale(1, 1)}
+      to {transform: scale(2, 2)}
+  }
+
+
+.extra-padding {
+  padding: 0 10rem;
+}
+
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 320px) { 
+  .extra-padding {
+    text-align: center;
+    padding: 0 1rem;
+  }
+ }
+@media (min-width: 576px) { }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+  .extra-padding {
+    text-align: center;
+    padding: 0 10rem;
+    margin: 0;
+  }
+ }
+
+
+
+

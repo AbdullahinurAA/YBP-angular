@@ -1,0 +1,87 @@
+$navy-blue: #0b2f5f;
+$dark-grey: #8d99ae;
+$light-grey: #edf2f4;
+$red: #ef233c;
+$dark-red: #d90429;
+$title-font: "freight-big-pro",
+serif;
+
+.my-font {
+  font-family: $title-font
+}
+
+.my-dark-navy {
+  background-color: $navy-blue;
+}
+
+.text-navy {
+  color: $navy-blue !important;
+}
+
+.bg-my-red {
+  background-color: $dark-red;
+}
+
+.bg-my-red:hover {
+  color: $light-grey !important;
+  background-color: $navy-blue;
+}
+
+.my-light-grey {
+  color: $light-grey;
+}
+
+.bg-my-light-grey {
+  background-color: $light-grey;
+}
+
+.my-grey {
+  color: $dark-grey;
+}
+
+.dark-red-text {
+  color: $dark-red !important;
+}
+
+
+
+
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 370px) { 
+  .portrait {
+    float: none;
+    padding: 0px 0px 10px 0px;
+  }
+  .about-text {
+    padding: 0 1rem;
+  }
+
+  .view.intro {
+    .call-to-companies {
+      h2 {
+        font-size: 4.5rem;
+      }
+    }
+  }
+ }
+
+ @media (min-width: 576px) { }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {  }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {  }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+  .portrait {
+    float: right;
+    padding: 0px 0px 10px 15px;
+  }
+  
+ }

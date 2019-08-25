@@ -1,0 +1,90 @@
+<h1 class="h1 display-4 p-0 my-font text-navy text-center">Wholesale</h1>
+<div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <!-- modal one -->
+          <div class="view overlay zoom wow fadeIn" data-wow-duration="2s" (click)="modalOne.show()">
+              <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20(131).jpg" class="img-fluid " alt="smaple image">
+              <div class="mask flex-center">
+                  <p class="white-text">Zoom effect</p>
+              </div>
+          </div>
+          <div mdbModal #modalOne="mdbModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close pull-right" aria-label="Close" (click)="modalOne.hide()">
+                      <span aria-hidden="true">×</span>
+                    </button>
+                    <h4 class="modal-title w-100" id="myModalLabel">One</h4>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" mdbBtn color="secondary" class="waves-light" aria-label="Close" (click)="modalOne.hide()" mdbWavesEffect>Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- modal one end -->
+      </div>
+      <div class="col-md-4">
+        <!-- modal one -->
+        <div class="view overlay zoom wow fadeIn" data-wow-duration="2s" (click)="modalTwo.show()">
+            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20(131).jpg" class="img-fluid " alt="smaple image">
+            <div class="mask flex-center">
+                <p class="white-text">Zoom effect</p>
+            </div>
+        </div>
+        <div mdbModal #modalTwo="mdbModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close pull-right" aria-label="Close" (click)="modalTwo.hide()">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                  <h4 class="modal-title w-100" id="myModalLabel">Two</h4>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" mdbBtn color="secondary" class="waves-light" aria-label="Close" (click)="modalTwo.hide()" mdbWavesEffect>Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- modal one end -->
+      </div>
+      <div class="col-md-4">
+        <!-- modal one -->
+        <div class="view overlay zoom wow fadeIn" data-wow-duration="2s" (click)="modalThree.show()">
+            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20(131).jpg" class="img-fluid " alt="smaple image">
+            <div class="mask flex-center">
+                <p class="white-text">Zoom effect</p>
+            </div>
+        </div>
+        <div mdbModal #modalThree="mdbModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close pull-right" aria-label="Close" (click)="modalThree.hide()">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                  <h4 class="modal-title w-100" id="myModalLabel">Three</h4>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" mdbBtn color="secondary" class="waves-light" aria-label="Close" (click)="modalThree.hide()" mdbWavesEffect>Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- modal one end -->
+      </div>
+    </div>
+  </div>
+  

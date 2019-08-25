@@ -1,0 +1,80 @@
+<!-- SideNav slide-out button -->
+<a (click)="sidenav.toggle()" mdbBtn color="danger" class="p-3 button-collapse rgba-my-red">
+  <mdb-icon fas icon="bars"></mdb-icon>
+</a>
+<!--/. SideNav slide-out button -->
+
+<!-- Sidebar navigation -->
+<mdb-side-nav #sidenav class="fixed" [fixed]="true">
+  <!-- Logo -->
+  <li>
+    <div class="logo-wrapper waves-light">
+      <a routerLink="/companies"><img src="assets/logo/yare-logo-one.png" class="img-fluid flex-center"></a>
+    </div>
+  </li>
+  <!--/. Logo -->
+  <!-- Side navigation links -->
+  <li>
+    <ul class="collapsible collapsible-accordion">
+      <mdb-accordion [multiple]="false" aria-multiselectable="false">
+
+
+        <!-- Simple link -->
+
+        <mdb-accordion-item class="no-collase">
+          <mdb-accordion-item-head mdbWavesEffect routerLink="furniture">Furniture</mdb-accordion-item-head>
+          <mdb-accordion-item-body></mdb-accordion-item-body>
+        </mdb-accordion-item>
+
+
+        <!-- Simple link -->
+        <mdb-accordion-item class="no-collase">
+          <mdb-accordion-item-head mdbWavesEffect routerLink="finance">Finance</mdb-accordion-item-head>
+          <mdb-accordion-item-body></mdb-accordion-item-body>
+        </mdb-accordion-item>
+
+
+        <!-- Simple link -->
+        <mdb-accordion-item class="no-collase">
+          <mdb-accordion-item-head mdbWavesEffect routerLink="fashion">Fashion</mdb-accordion-item-head>
+          <mdb-accordion-item-body></mdb-accordion-item-body>
+        </mdb-accordion-item>
+
+        <!-- Simple link -->
+        <mdb-accordion-item class="no-collase">
+          <mdb-accordion-item-head mdbWavesEffect routerLink="travel">Travel</mdb-accordion-item-head>
+          <mdb-accordion-item-body></mdb-accordion-item-body>
+        </mdb-accordion-item>
+
+        <!-- Simple link -->
+        <mdb-accordion-item class="no-collase">
+          <mdb-accordion-item-head mdbWavesEffect routerLink="medical">Medical</mdb-accordion-item-head>
+          <mdb-accordion-item-body></mdb-accordion-item-body>
+        </mdb-accordion-item>
+
+        <!-- Simple link -->
+        <mdb-accordion-item class="no-collase">
+          <mdb-accordion-item-head mdbWavesEffect routerLink="wholesale">Wholesale</mdb-accordion-item-head>
+          <mdb-accordion-item-body></mdb-accordion-item-body>
+        </mdb-accordion-item>
+
+        <!-- Simple link -->
+        <mdb-accordion-item class="no-collase">
+          <mdb-accordion-item-head mdbWavesEffect routerLink="hotel">Hotel</mdb-accordion-item-head>
+          <mdb-accordion-item-body></mdb-accordion-item-body>
+        </mdb-accordion-item>
+
+        <!-- Simple link -->
+        <mdb-accordion-item class="no-collase">
+          <mdb-accordion-item-head mdbWavesEffect routerLink="food">Food</mdb-accordion-item-head>
+          <mdb-accordion-item-body></mdb-accordion-item-body>
+        </mdb-accordion-item>
+      </mdb-accordion>
+    </ul>
+  </li>
+  <!--/. Side navigation links -->
+  <div class="sidenav-bg mask-strong rgba-dark-grey"></div>
+</mdb-side-nav>
+<!--/. Sidebar navigation -->
+
+<router-outlet></router-outlet>
