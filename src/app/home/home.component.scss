@@ -110,16 +110,16 @@ serif;
     }
 
   }
+  .img-placer-one {
+    display: none;
+  }
 
 }
 
 
 @media (min-width: 576px) {
   .img-placer-one {
-    position: relative;
-    left: 0;
-    padding: 0;
-    margin: 0;
+    display: none;
   }
 }
 
