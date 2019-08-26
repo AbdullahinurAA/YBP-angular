@@ -144,6 +144,7 @@ serif;
   }
 
   .img-placer-one {
+    display: block;
     position: relative;
     left: 0;
     padding: 0;
@@ -165,6 +166,9 @@ serif;
       width: 100%;
     }
   }
+  .img-placer-one {
+    display: block;
+  }
 }
 
 
@@ -183,6 +187,7 @@ serif;
   }
 
   .img-placer-one {
+    display: block;
     position: relative;
     left: 0;
     padding: 0;
@@ -245,6 +250,7 @@ serif;
         margin: 0;
         width: 120%;
         .img-placer-one {
+          display: block;
           position: relative !important;
           bottom: 5rem !important;
           z-index: -1 !important;
