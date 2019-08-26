@@ -26,7 +26,7 @@ const routes: Routes = [
     routes,
     { 
       enableTracing: false, 
-      useHash: true
+      
     } // <-- debugging purposes only
   )],
   exports: [RouterModule]
