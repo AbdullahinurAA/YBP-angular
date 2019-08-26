@@ -188,119 +188,97 @@
 <!-- CALL TO ABOUT END -->
 
 
-<!-- FOOTER START -->
-<footer class="page-footer font-small">
-  <!-- CONTACT START -->
-  <div class="container contact wow fadeIn" data-wow-duration="1s">
-    <div class="card text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="pt-5 mt-5 pb-5 pt-5">
-              <h1 class="h1-respnsive my-font text-navy">Contact</h1>
-              <div class="text-center my-grey">
-                <p>Yare Plaza, 2nd Floor</p>
-                <p>1st Avenue</p>
-                <p>Eastliegh</p>
+  <!-- FOOTER START -->
+  <footer class="page-footer font-small">
+    <!-- CONTACT START -->
+    <div class="container contact wow fadeIn" data-wow-duration="1s">
+      <div class="card text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="pt-5 mt-5 pb-5 pt-5">
+                <h1 class="h1-respnsive my-font text-navy">Contact</h1>
+                <div class="text-center my-grey">
+                  <p>Yare Plaza, 2nd Floor</p>
+                  <p>1st Avenue</p>
+                  <p>Eastliegh</p>
+                </div>
+                <p class="text-navy">info@yare.co.ke</p>
+                <p class="text-navy">0721-123-123</p>
+                <img src="assets/logo/Yare Logo.svg" alt="">
               </div>
-              <p class="text-navy">info@yare.co.ke</p>
-              <p class="text-navy">0721-123-123</p>
-              <img src="assets/logo/Yare Logo.svg" alt="">
             </div>
-          </div>
-          <div class="col-md-8 bg-my-light-grey pt-5 pb-5">
-            <!-- start -->
-            <form class="pt-5">
-              <h3 class="h2 text-center my-font text-navy">Contact Us For Any Inquiries</h3>
-
-              <!-- Grid row -->
-              <div class="row">
-                <!-- Grid column -->
-                <div class="col-md-6">
-                  <div class="md-form mb-0">
-                    <input type="text" id="contact-name" class="form-control" mdbInput>
-                    <label for="contact-name" class="">Your name</label>
+            <div class="col-md-8 bg-my-light-grey pt-5 pb-5">
+              <!-- start -->
+              <form class="text-center py-5" style="color: #757575;" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+  
+                <div class="md-form mt-3">
+                  <input type="text" formControlName="contactFormName" id="materialContactFormName"
+                    class="form-control" mdbInput>
+                  <label for="materialContactFormName">Name</label>
+                </div>
+  
+                <div class="md-form">
+                  <input type="email" formControlName="contactFormEmail" id="materialContactFormEmail"
+                    class="form-control" mdbInput>
+                  <label for="materialContactFormEmail">E-mail</label>
+                </div>
+  
+                <span>Subject</span>
+                <div class="row">
+                  <div class="col-md-12 mx-auto">
+                    <mdb-select formControlName="contactFormSubjects" [options]="optionsSelect"
+                      placeholder="Choose your option"></mdb-select>
                   </div>
                 </div>
-                <!-- Grid column -->
-
-                <!-- Grid column -->
-                <div class="col-md-6">
-                  <div class="md-form mb-0">
-                    <input type="text" id="contact-email" class="form-control" mdbInput>
-                    <label for="contact-email" class="">Your email</label>
+  
+                <div class="md-form">
+                  <textarea type="text" formControlName="contactFormMessage" id="materialContactFormMessage"
+                    class="form-control md-textarea" mdbInput></textarea>
+                  <label for="materialContactFormMessage">Message</label>
+                </div>
+  
+                <div class="row">
+                  <div class="col-md-6 mx-auto d-flex justify-content-center">
+                    <mdb-checkbox formControlName="contactFormCopy">Send me a copy of this message</mdb-checkbox>
                   </div>
                 </div>
-                <!-- Grid column -->
+  
 
-              </div>
-              <!-- Grid row -->
 
-              <!-- Grid row -->
-              <div class="row">
-
-                <!-- Grid column -->
-                <div class="col-md-12">
-                  <div class="md-form mb-0">
-                    <input type="text" id="contact-Subject" class="form-control" mdbInput>
-                    <label for="contact-Subject" class="">Subject</label>
-                  </div>
-                </div>
-                <!-- Grid column -->
-
-              </div>
-              <!-- Grid row -->
-
-              <!-- Grid row -->
-              <div class="row">
-
-                <!-- Grid column -->
-                <div class="col-md-12">
-                  <div class="md-form">
-                    <textarea type="text" id="contact-message" class="form-control md-textarea" rows="3"
-                      mdbInput></textarea>
-                    <label for="contact-message">Your message</label>
-                  </div>
-                </div>
-                <!-- Grid column -->
-
-              </div>
-              <!-- Grid row -->
-
-            </form>
-
-            <div class="text-center text-md-left">
-              <a mdbBtn color="" class="bg-my-red" rounded="true" size="lg" href="#" role="button"
-                mdbWavesEffect>Submit</a>
+                  <a mdbBtn color="" class="bg-my-red text-white wow fadeIn z-depth-0 my-4 waves-effect" block="true" data-wow-duration="2s" rounded="true" size="lg" role="button" type="submit"
+                  [disabled]="disabledSubmitButton" mdbWavesEffect>Send</a>
+  
+              </form>
+  
+  
             </div>
-
+  
+            <!-- end -->
+  
           </div>
-
-          <!-- end -->
-
         </div>
       </div>
     </div>
-  </div>
-  <!-- CONTACT END -->
-  <!-- Footer -->
-
-
-  <!-- Footer Text -->
-  <div class="container-fluid text-center text-md-left  my-dark-navy">
-
-
-
-  </div>
-  <!-- Footer Text -->
-
-  <!-- Copyright -->
-  <div class="footer text-center py-3  my-dark-navy">© 2019 Copyright:
-    <a href="/"> Yare Centre Ltd</a>
-  </div>
-  <!-- Copyright -->
-
-
-  <!-- Footer -->
-</footer>
-<!-- FOOTER END -->
+    <!-- CONTACT END -->
+    <!-- Footer -->
+  
+  
+    <!-- Footer Text -->
+    <div class="container-fluid text-center text-md-left  my-dark-navy">
+  
+  
+  
+    </div>
+    <!-- Footer Text -->
+  
+    <!-- Copyright -->
+    <div class="footer text-center py-3  my-dark-navy">© 2019 Copyright:
+      <a href="/"> Yare Centre Ltd</a>
+    </div>
+    <!-- Copyright -->
+  
+  
+    <!-- Footer -->
+  </footer>
+  <!-- FOOTER END -->
