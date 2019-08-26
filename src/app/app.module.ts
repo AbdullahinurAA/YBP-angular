@@ -6,6 +6,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AgmCoreModule } from '@agm/core';
 import { AppComponent } from './app.component';
+import { HttpClientModule } from "@angular/common/http";
+import { ReactiveFormsModule } from '@angular/forms'
 
 import { MDBSpinningPreloader, MDBBootstrapModulesPro, ToastModule } from 'ng-uikit-pro-standard';
 import { HomeComponent } from './home/home.component';
@@ -16,6 +18,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { ServicesComponent } from './services/services.component';
+import { ConnectionService } from "./connection.service";
 
 
 
@@ -28,14 +31,16 @@ import { ServicesComponent } from './services/services.component';
     NavbarComponent,
     AboutComponent,
     ContactComponent,
-    ServicesComponent
+    ServicesComponent,
+    // ConnectionService,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-
     FormsModule,
     HttpModule,
+    HttpClientModule,
+    ReactiveFormsModule,
     ToastModule.forRoot(),
     MDBBootstrapModulesPro.forRoot(),
     AgmCoreModule.forRoot({
@@ -48,7 +53,10 @@ import { ServicesComponent } from './services/services.component';
    
   
   ],
-  providers: [MDBSpinningPreloader],
+  providers: [
+    MDBSpinningPreloader,
+    ConnectionService
+  ],
   bootstrap: [AppComponent],
   schemas:      [ NO_ERRORS_SCHEMA ]
 })
